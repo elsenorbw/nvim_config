@@ -27,3 +27,5 @@ end, { desc = "Select 3rd Harpoon File" })
 vim.keymap.set("n", "<C-d>", function()
   harpoon:list():select(4)
 end, { desc = "Select 4th Harpoon File" })
+
+vim.keymap.set("n", "<C-u>", vim.cmd.UndotreeToggle, { desc = "Toggle [U]ndo tree" })
